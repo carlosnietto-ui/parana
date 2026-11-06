@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salto São Francisco - Paraná</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d9f0e2;
+            text-align: center;
+            color: #234333;
+        }
+
+        header {
+            background-color: #176b45;
+            color: white;
+            padding: 30px;
+        }
+
+        nav {
+            background-color: #a8d5ba;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #174d35;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: #f4fff7;
+            padding: 30px;
+            max-width: 850px;
+            margin: 25px auto;
+            border-radius: 15px;
+        }
+
+        h2 {
+            color: #176b45;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 12px;
+            margin: 20px auto;
+        }
+
+        li {
+            margin: 12px;
+            font-size: 17px;
+        }
+
+        footer {
+            background-color: #176b45;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Salto São Francisco</h1>
+        <p>Uma das maiores belezas naturais do Paraná!</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#curiosidades">Curiosidades</a>
+    </nav>
+
+    <main id="conteudo">
+
+        <h2 id="sobre">Conheça o Salto São Francisco</h2>
+
+        <img
+            src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=900"
+            alt="Cachoeira em meio à natureza">
+
+        <p>
+            O Salto São Francisco é um dos pontos turísticos naturais
+            mais impressionantes do estado do Paraná. Localizado na
+            região central do estado, possui aproximadamente 196
+            metros de altura.
+        </p>
+
+        <p>
+            A cachoeira está cercada por uma linda paisagem natural,
+            com muita vegetação, montanhas e ar puro. É um lugar
+            perfeito para quem gosta de aventura, natureza e belas
+            paisagens.
+        </p>
+
+        <p>
+            O local fica dentro do Parque Estadual Salto São Francisco
+            da Esperança e atrai visitantes interessados em conhecer
+            suas belezas naturais e fotografar a enorme queda d'água.
+        </p>
+
+        <h2 id="curiosidades">Curiosidades</h2>
+
+    </main>
+
+    <footer>
+        <p>Trabalho de HTML, CSS e JavaScript - Paraná</p>
+    </footer>
+
+    <script>
+        // Selecionar o elemento main
+        const main = document.getElementById("conteudo");
+
+        // Criar uma lista
+        const lista = document.createElement("ul");
+
+        // Criar os itens da lista
+        const curiosidades = [
+            "Possui aproximadamente 196 metros de altura.",
+            "Está localizado no estado do Paraná.",
+            "É cercado por uma rica vegetação natural.",
+            "É um destino muito procurado por amantes da natureza."
+        ];
+
+        // Adicionar os itens usando o DOM
+        curiosidades.forEach(function(texto) {
+            const item = document.createElement("li");
+            item.textContent = texto;
+            lista.appendChild(item);
+        });
+
+        // Adicionar a lista ao conteúdo
+        main.appendChild(lista);
+    </script>
+
+</body>
+</html>
